@@ -26,7 +26,7 @@
 }
 
 .bat {
-  transition: 0.1s;
+  transition: 0.1s ease-in;
 }
 
 .field {
@@ -54,4 +54,53 @@
   left: 470px;
   top: -120px;
   transition: 0.3s ease-out 0.2s;
+}
+
+/* ========== Explore animations ======== */
+
+.stage {
+  width: 600px;
+  height: 300px;
+  border: 2px solid steelblue;
+  background-color: aqua;
+}
+
+.ball2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  /* animation: ping-pong 2s ease-in-out 1s infinite alternate; */
+
+  animation: bounce 3s ease-in-out 1s infinite alternate;
+}
+
+/* @keyframes ping-pong {
+  from {
+    left: 0;
+  }
+  to {
+    left: 400px;
+    background-color: red;
+  }
+} */
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    left: 150px;
+    top: 200px;
+  }
+  50% {
+    left: 300px;
+    top: 0px;
+  }
+  100% {
+    left: 500px;
+    top: 200px;
+  }
 }
