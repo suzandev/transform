@@ -1,0 +1,18 @@
+/* ========= transition =========== */
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  border: 2px solid orange;
+  background: rgba(255, 166, 0, 0.336);
+  /* transition: width 5s linear 3s, background-color 3s ease-in 3s; */
+  transition: 1s;
+}
+
+.box:hover {
+  /* width: 300px;
+  background-color: green; */
+
+  transform: rotate(45deg) scale(1.5) translateX(150px);
+}
